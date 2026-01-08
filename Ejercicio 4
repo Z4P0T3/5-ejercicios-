@@ -1,0 +1,7 @@
+filtrar_mayores([], _, []).
+filtrar_mayores([H|T], N, [H|R]) :- 
+    H > N, 
+    filtrar_mayores(T, N, R).
+filtrar_mayores([H|T], N, R) :- 
+    H =< N, 
+    filtrar_mayores(T, N, R).
