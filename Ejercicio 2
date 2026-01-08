@@ -1,0 +1,7 @@
+sumar_lista(L, S) :- 
+    suma(L, 0, S).
+
+suma([], A, A).
+suma([H|T], A, S) :- 
+    N is A + H, 
+    suma(T, N, S).
