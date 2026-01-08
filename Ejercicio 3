@@ -1,0 +1,3 @@
+ultimo_elemento([X], X).
+ultimo_elemento([_|T], X) :- 
+    ultimo_elemento(T, X).
