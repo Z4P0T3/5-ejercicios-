@@ -1,0 +1,7 @@
+es_hermano_robusto(X, Y) :-
+    hombre(X),
+    X \= Y,
+    padre(P, X),
+    padre(P, Y),
+    madre(M, X),
+    madre(M, Y).
